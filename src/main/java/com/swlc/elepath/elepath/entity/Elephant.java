@@ -19,7 +19,7 @@ public class Elephant {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long eid;
     private Double latitude;
-    private Double latitude;
+    private Double longitude;
     private String imagePath;
     @CreationTimestamp
     @Temporal(TemporalType.TIMESTAMP)
