@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @AllArgsConstructor
@@ -17,10 +18,10 @@ public class Elephant {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long eid;
-    private Long location;
+    private Double latitude;
+    private Double latitude;
+    private String imagePath;
     @CreationTimestamp
     @Temporal(TemporalType.TIMESTAMP)
-    private Date lastUpdateTime;
-
-
+    private LocalDateTime lastUpdateTime;
 }
