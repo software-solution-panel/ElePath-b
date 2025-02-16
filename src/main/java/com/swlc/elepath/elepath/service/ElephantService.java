@@ -8,5 +8,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 public interface ElephantService {
     ResponseEntity<StandardResponse<?>> addElephant(MultipartFile image, Double latitude, Double longitude);
+    ResponseEntity<StandardResponse<?>> getAllElephant();
 
 }
