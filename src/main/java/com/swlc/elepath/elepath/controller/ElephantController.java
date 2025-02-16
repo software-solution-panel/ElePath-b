@@ -21,4 +21,10 @@ public class ElephantController {
                                                         @RequestParam("longitude") Double longitude) {
         return elephantService.addElephant(image, latitude, longitude);
     }
+
+    @GetMapping("/getAllElephant")
+    private ResponseEntity<StandardResponse<?>> getAllElephant() {
+        return elephantService.getAllElephant();
+    }
+
 }
